@@ -1,0 +1,90 @@
+
+*
+{
+  box-sizing: border;
+}
+ 
+body{
+  background: white;
+  max-width: auto;
+}
+
+  .main-container {
+  max-width: 900px;
+  height: 1200px;
+  background-image:url("https://www.uxfree.com/wp-content/uploads/2014/07/3-free-textures-to-download-2014.jpg");font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-bottom: auto;
+  
+  margin-top: 10px;
+  border: solid 3px black;
+
+}
+.container {
+  width: 400px;
+  height: auto;
+  background: lightpink;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#title-box {
+ /* position: absolute;*/
+  background-color: orange;
+  height: 80px;
+  width: 250px;
+  margin-left: 10px;
+  
+  color: white;
+  font-size: 32px;
+  
+  line-height: 80px;
+  text-align: center;
+  display:table cell;
+  vertical-align: middle;
+  margin-top: 20px;
+  
+}
+
+.wrapper-1 {
+ 
+  width: 400px;
+  height: 450px;
+  margin-left: 10px;
+  background-color:wheat;
+  font-size: 18px; 
+  color: green;
+}
+
+/*.wrapper-2 {
+  z-index: -100;
+  width: 350px;
+  height: 100px;
+  margin-bottom: auto;
+  background: lightcyan;
+
+}*/
+
+#random-number-box {
+  width: 200px;
+  background: green;
+  height: 110px;
+  color: black;
+  margin-left: 10px;
+  
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 40px;
+  color:darkcyan;
+}
+#wins-losses-box {
+  position: absolute;
+  margin-top: -110px;
+  margin-left: 220px;
+  float: left;
+  width: 75px;
+  height: 110px;
+  background: rgb(173, 221, 230);
+}
