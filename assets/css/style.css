@@ -58,20 +58,14 @@ body{
   color: green;
 }
 
-/*.wrapper-2 {
-  z-index: -100;
-  width: 350px;
-  height: 100px;
-  margin-bottom: auto;
-  background: lightcyan;
-
-}*/
-
 #random-number-box {
   width: 200px;
   background: green;
   height: 110px;
   color: black;
+  font-size: 32px;
+  padding-left: 3px;
+  padding-top: 5px;
   margin-left: 10px;
   margin-top: 10px;
   
@@ -81,6 +75,7 @@ h1 {
   font-size: 18px;
   line-height: 40px;
   color:darkblue;
+  padding-left: 2px;
 }
 
 #wins-losses-box {
@@ -96,13 +91,13 @@ h1 {
 }
 form {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 13px;
   margin-top: 7px;
 }
 
 img { 
   height: 60px;
-  width: 60px;
+  width: 55px;
   background: whitesmoke; 
   object-fit: cover;
   padding: 0 0 0 0;
@@ -115,6 +110,7 @@ img {
   margin-left: 10px;
   color: white;
   line-height: 30px;
+  padding-left: 2px;
   margin-top: 7px;
 }
 
@@ -123,8 +119,10 @@ img {
   width: 200px;
   background: rgb(29, 146, 175);
   margin-left: 10px;
+  padding-left: 3px;
+  padding-top: 5px;
   color: white;
-  line-height: 110px;
+  
   margin-top: 7px;
   margin-bottom: 20px;
 }
