@@ -8,7 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type href="assets/css/reset.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-  <script src="main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -16,8 +20,8 @@
 
 
     <div id="title-box">CrystalsCollector!</div>
-   
-    <div class="wrapper-1">
+
+    <div class="instructions-box">
       <br>
       <p>You will be given a random number at the start of the game</p>
       <br>
@@ -34,9 +38,13 @@
       <p>Each time when the game starts, the game will change the</p>
       <p>values of each crystal.</p>
     </div>
-    
-    <div class="wrapper-2">
-      <div id="random-number-box"></div>
+
+    <div class="wrapper">
+      <div id="random-number-box">
+        <h2>
+          <span id="random-target-no"></span>
+        </h2>
+      </div>
       <div id="wins-losses-box">
         <h1>Wins:
           <span id="wins"></span>
@@ -46,9 +54,9 @@
         </h1>
       </div>
     </div>
-   
+
     <div>
-      <form class="button-group">
+      <div class="crystals">
         <button type="button" id="crystal-1">
           <img src="assets/images/red_X.png">
         </button>
@@ -60,27 +68,21 @@
         </button>
         <button type="button" id="crystal-4">
           <img src="assets/images/green_X.png">
-      </form>
+        </div>
     </div>
-  
+
     <div id="total-score-titlebox">Your total score is:
     </div>
-   
+
     <div id="score-box">
       <span id="total-score"></span>
 
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 

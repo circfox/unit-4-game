@@ -31,14 +31,12 @@ body{
 
 #title-box {
  /* position: absolute;*/
-  background-color: orange;
+  background-color:rgb(199, 102, 67);
   height: 80px;
   width: 250px;
   margin-left: 10px;
-  
   color: white;
   font-size: 32px;
-  
   line-height: 80px;
   text-align: center;
   display:table cell;
@@ -48,33 +46,38 @@ body{
   
 }
 
-.wrapper-1 {
- 
+.instructions-box {
   width: 445px;
   height: 450px;
   margin-left: 10px;
   background-color:wheat;
-  font-size: 18px; 
-  color: green;
+  font-size: 17px; 
+  color: rgb(70, 180, 112);
+  text-emphasis-color: filled green;
+  padding-left: 3px;
 }
 
 #random-number-box {
   width: 200px;
-  background: green;
+  background: rgb(70, 180, 112);
   height: 110px;
-  color: black;
-  font-size: 32px;
-  padding-left: 3px;
-  padding-top: 5px;
+  
   margin-left: 10px;
   margin-top: 10px;
-  
+}
+#random-target-no, 
+h2{
+color: black;
+  font-size: 32px;
+  padding-left: 3px;
+  padding-top: 5px;  
 }
 
 h1 {
   font-size: 18px;
   line-height: 40px;
-  color:darkblue;
+  color:rgb(70, 180, 112);
+  text-emphasis-color: 100;
   padding-left: 2px;
 }
 
@@ -82,14 +85,14 @@ h1 {
   position: absolute;
   margin-top: -110px;
   margin-left: 220px;
+  padding-top: 0px;
   margin-bottom: 10px;
-
   float: left;
   width: 75px;
   height: 110px;
-  background: skyblue;
+  background: rgb(37, 246, 253);
 }
-form {
+.crystals {
   display: inline-block;
   margin-left: 13px;
   margin-top: 7px;
@@ -106,7 +109,7 @@ img {
 #total-score-titlebox{
   height: 30px;
   width: 200px;
-  background: rgb(29, 146, 175);
+  background: #28a59f;
   margin-left: 10px;
   color: white;
   line-height: 30px;
@@ -117,13 +120,13 @@ img {
 #score-box{
   height: 110px;
   width: 200px;
-  background: rgb(29, 146, 175);
+  background: #28a59f;
   margin-left: 10px;
   padding-left: 3px;
   padding-top: 5px;
   color: white;
   
-  margin-top: 7px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
