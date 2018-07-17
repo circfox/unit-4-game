@@ -30,8 +30,7 @@ body{
 }
 
 #title-box {
- /* position: absolute;*/
-  background-color:rgb(199, 102, 67);
+ background-color:rgb(199, 102, 67);
   height: 80px;
   width: 250px;
   margin-left: 10px;
@@ -130,21 +129,3 @@ img {
   margin-bottom: 20px;
 }
 
-#crystal-1 {
-
-
-}
-
-#crystal-2 {
- 
-
-}
-
-#crystal-3 {
-
-}
-
-#crystal-4 {
-
- 
-}

@@ -2,7 +2,6 @@ $(document).ready(function () {
   // First initialize global variables
   var wins = 0;
   var losses = 0;
-  var counter = 0;
   var gameRun = 0;
   var crystalValue = 0;
 
@@ -41,97 +40,72 @@ $(document).ready(function () {
     if ((gameRun == 0 && crystalValue > targetNumber) || (crystalValue == targetNumber)) {
       reset();
       alert("New game coming up!");
-      } else {
+    } else {
       gameRun = 1;
     }
   }
 
   function conditions() {
-        // conditions
-        if (crystalValue == targetNumber){
-          $("#total-score").text(crystalValue);
-          gameRun = 0;
-          letTheGoodTimesRoll();
-        }  
-          else if (crystalValue > targetNumber){
-            gameRun = 0;
-            badTimes();
-          }
-    
+      if (crystalValue == targetNumber) {
+      $("#total-score").text(crystalValue);
+      gameRun = 0;
+      letTheGoodTimesRoll();
+    }
+    else if (crystalValue > targetNumber) {
+      gameRun = 0;
+      badTimes();
+    }
   }
 
-  // on clicking crystals
-  $("#crystal-1").on("click", function(){
+  // click on the crystals
+  $("#crystal-1").on("click", function () {
     proceed();
-    //console.log(num1);
     crystalValue = crystalValue + num1;
     //console.log("Your total score is " + crystalValue);
     $("#total-score").text(crystalValue);
     conditions();
-    
-})
-  $("#crystal-2").on("click", function(){
+
+  })
+  $("#crystal-2").on("click", function () {
     proceed();
     crystalValue = crystalValue + num2;
     //console.log("Your total score is " + crystalValue);
     $("#total-score").text(crystalValue);
-    // conditions
-      if (crystalValue == targetNumber){
-        gameRun = 0;
-        letTheGoodTimesRoll();
-      }  
-        else if (crystalValue > targetNumber){
-          gameRun = 0;
-          badTimes();
-        }
+    conditions();
   })
 
-  $("#crystal-3").on("click", function(){
+  $("#crystal-3").on("click", function () {
     proceed();
     crystalValue = crystalValue + num3;
     //console.log("Your total score is " + crystalValue);
     $("#total-score").text(crystalValue);
-    // conditions
-      if (crystalValue == targetNumber){
-        gameRun = 0;
-        letTheGoodTimesRoll();
-      }  
-        else if (crystalValue > targetNumber){
-          gameRun = 0;
-          badTimes();
-        }
+    conditions();
   })
 
-  $("#crystal-4").on("click", function(){
+  $("#crystal-4").on("click", function () {
     proceed();
     crystalValue = crystalValue + num4;
-    console.log("Your total score is " + crystalValue);
+    //console.log("Your total score is " + crystalValue);
     $("#total-score").text(crystalValue);
-    // conditions
-      if (crystalValue == targetNumber){
-        gameRun = 0;
-        letTheGoodTimesRoll();
-      }  
-        else if (crystalValue > targetNumber){
-          gameRun = 0;
-          badTimes();
-        }
+    conditions();
   })
- // Display wins
+
+  // Display wins
   function letTheGoodTimesRoll() {
-    alert("EWOK CELEBRATION! YOU WON!");
+    alert("Congratulations! You won!");
     wins++;
     $("#wins").text(wins);
     gameRun = 0;
     proceed();
   }
+  // Display losses
   function badTimes() {
-    alert("You lose! Nada Celebration");
+    alert("You lose!");
     losses++
     $("#losses").text(losses);
     gameRun = 0;
     proceed();
   }
 
-  });
+});
 
