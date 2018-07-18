@@ -44,10 +44,15 @@ $(document).ready(function () {
       gameRun = 1;
     }
   }
+  
+  // update score
+  function update() {
+    $("#total-score").text(crystalValue);
+  }
 
   function conditions() {
       if (crystalValue == targetNumber) {
-      $("#total-score").text(crystalValue);
+      update;
       gameRun = 0;
       letTheGoodTimesRoll();
     }
@@ -62,7 +67,7 @@ $(document).ready(function () {
     proceed();
     crystalValue = crystalValue + num1;
     //console.log("Your total score is " + crystalValue);
-    $("#total-score").text(crystalValue);
+    update();
     conditions();
 
   })
@@ -70,7 +75,7 @@ $(document).ready(function () {
     proceed();
     crystalValue = crystalValue + num2;
     //console.log("Your total score is " + crystalValue);
-    $("#total-score").text(crystalValue);
+    update();
     conditions();
   })
 
@@ -78,17 +83,26 @@ $(document).ready(function () {
     proceed();
     crystalValue = crystalValue + num3;
     //console.log("Your total score is " + crystalValue);
-    $("#total-score").text(crystalValue);
+    update();
     conditions();
   })
 
   $("#crystal-4").on("click", function () {
     proceed();
     crystalValue = crystalValue + num4;
-    //console.log("Your total score is " + crystalValue);
-    $("#total-score").text(crystalValue);
+    update();
     conditions();
   })
+
+  //startover
+  function startOver() {
+    var test = $("<button type = 'button'>START OVER </button>");
+    $(".instructions-box").append(test);
+    test.on("click", function(){
+      proceed();
+      test.remove();
+    })
+  }
 
   // Display wins
   function letTheGoodTimesRoll() {
@@ -96,7 +110,8 @@ $(document).ready(function () {
     wins++;
     $("#wins").text(wins);
     gameRun = 0;
-    proceed();
+    startOver();
+    
   }
   // Display losses
   function badTimes() {
@@ -104,7 +119,8 @@ $(document).ready(function () {
     losses++
     $("#losses").text(losses);
     gameRun = 0;
-    proceed();
+    startOver();
+    //proceed();
   }
 
 });

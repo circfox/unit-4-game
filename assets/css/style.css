@@ -9,7 +9,7 @@ body{
 }
 
   .main-container {
-  max-width: 900px;
+  max-width: 870px;
   height: auto;
   background-image:url("https://www.uxfree.com/wp-content/uploads/2014/07/3-free-textures-to-download-2014.jpg");
   font-family: 'Times New Roman', Times, serif;
@@ -31,7 +31,7 @@ body{
 
 #title-box {
  background-color:rgb(199, 102, 67);
-  height: 80px;
+  height: 90px;
   width: 250px;
   margin-left: 10px;
   color: white;
@@ -42,31 +42,36 @@ body{
   vertical-align: middle;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
   
 }
 
 .instructions-box {
-  width: 445px;
-  height: 450px;
+  width: 430px;
+  height: 430px;
   margin-left: 10px;
-  background-color:wheat;
+  background-color:rgb(241, 226, 197);
   font-size: 17px; 
   color: rgb(70, 180, 112);
   text-emphasis-color: filled green;
   padding-left: 3px;
 }
 
+p {
+  font-size: 17px;
+}
+
 #random-number-box {
   width: 200px;
-  background: rgb(70, 180, 112);
   height: 110px;
-  
+  background: rgb(70, 180, 112);
   margin-left: 10px;
   margin-top: 10px;
 }
 #random-target-no, 
-h2{
-color: black;
+h2 {
+  color: black;
   font-size: 32px;
   padding-left: 3px;
   padding-top: 5px;  
@@ -76,17 +81,17 @@ h1 {
   font-size: 18px;
   line-height: 40px;
   color:rgb(70, 180, 112);
-  text-emphasis-color: 100;
   padding-left: 2px;
 }
 
 #wins-losses-box {
   position: absolute;
+  float: left;
   margin-top: -110px;
   margin-left: 220px;
-  padding-top: 0px;
   margin-bottom: 10px;
-  float: left;
+  font-size: 18px;
+  color: darkcyan;
   width: 75px;
   height: 110px;
   background: rgb(37, 246, 253);
@@ -116,15 +121,15 @@ img {
   margin-top: 7px;
 }
 
-#score-box{
+#score-box {
   height: 110px;
   width: 200px;
   background: #28a59f;
   margin-left: 10px;
   padding-left: 3px;
   padding-top: 5px;
+  font-size: 28px;
   color: white;
-  
   margin-top: 10px;
   margin-bottom: 20px;
 }
